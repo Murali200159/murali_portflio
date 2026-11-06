@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-forest: #24372F;
+  --secondary-green: #687F5B;
+  --warm-beige: #D9C9B2;
+  --terracotta: #C96F4F;
+  --soft-cream: #F8F6EE;
+  --dark-typography: #20231F;
+  --color-white: #FFFFFF;
+}
+
+/* Base typography & smooth scrolling */
+html {
+  background-color: var(--soft-cream);
+  color: var(--dark-typography);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F1EDE2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9C9B2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #24372F;
+}
+
+/* Scroll margin so fixed header never covers section targets */
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+/* Accessible focus outline */
+:focus-visible {
+  outline: 2px solid var(--terracotta);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Subtle architectural grain */
+.bg-grain {
+  background-image: radial-gradient(rgba(36, 55, 47, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-grain-dark {
+  background-image: radial-gradient(rgba(248, 246, 238, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}

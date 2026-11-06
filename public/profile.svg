@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="600" height="750">
+  <defs>
+    <linearGradient id="forestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24372F" />
+      <stop offset="60%" stop-color="#1B2A24" />
+      <stop offset="100%" stop-color="#141E1A" />
+    </linearGradient>
+    <radialGradient id="terracottaGlow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#C96F4F" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#687F5B" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#24372F" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="archGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(248, 246, 238, 0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="750" fill="url(#forestGrad)" />
+  <rect width="600" height="750" fill="url(#archGrid)" />
+  <circle cx="300" cy="300" r="260" fill="url(#terracottaGlow)" />
+
+  <!-- Outer Architectural Margin Line -->
+  <rect x="24" y="24" width="552" height="702" fill="none" stroke="#D9C9B2" stroke-opacity="0.35" stroke-width="1" />
+  <rect x="32" y="32" width="536" height="686" fill="none" stroke="#D9C9B2" stroke-opacity="0.2" stroke-width="0.5" stroke-dasharray="4 4" />
+
+  <!-- Corner Registration Crosshairs in Terracotta -->
+  <path d="M 16 24 L 32 24 M 24 16 L 24 32" stroke="#C96F4F" stroke-width="2" />
+  <path d="M 568 24 L 584 24 M 576 16 L 576 32" stroke="#C96F4F" stroke-width="2" />
+  <path d="M 16 726 L 32 726 M 24 718 L 24 734" stroke="#C96F4F" stroke-width="2" />
+  <path d="M 568 726 L 584 726 M 576 718 L 576 734" stroke="#C96F4F" stroke-width="2" />
+
+  <!-- Geometric Architectural Disks -->
+  <circle cx="300" cy="320" r="160" fill="none" stroke="#D9C9B2" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="6 6" />
+  <circle cx="300" cy="320" r="130" fill="#24372F" stroke="#687F5B" stroke-width="2" opacity="0.9" />
+
+  <!-- Stylized Modern Developer Silhouette -->
+  <g fill="#F8F6EE">
+    <!-- Head -->
+    <circle cx="300" cy="270" r="58" fill="#F8F6EE" />
+    
+    <!-- Modern Tech Glasses / Visor in Terracotta -->
+    <rect x="268" y="260" width="64" height="14" rx="7" fill="#C96F4F" />
+    <circle cx="282" cy="267" r="4" fill="#FFFFFF" />
+    <circle cx="318" cy="267" r="4" fill="#FFFFFF" />
+    <line x1="294" y1="267" x2="306" y2="267" stroke="#24372F" stroke-width="2" />
+
+    <!-- Neck -->
+    <path d="M 284 324 L 316 324 L 316 360 L 284 360 Z" fill="#E2EADF" />
+    
+    <!-- Torso / Clean Tailored Shoulders in Warm Beige / Sage -->
+    <path d="M 165 480 C 165 390, 225 360, 280 360 L 320 360 C 375 360, 435 390, 435 480 Z" fill="#D9C9B2" />
+    <!-- Inner collar accent -->
+    <path d="M 270 360 L 300 410 L 330 360 Z" fill="#C96F4F" />
+  </g>
+
+  <!-- Constellation Nodes / AI Synapses in Background -->
+  <g stroke="#C96F4F" stroke-width="1.5" opacity="0.75">
+    <line x1="160" y1="200" x2="220" y2="240" />
+    <line x1="220" y1="240" x2="190" y2="300" />
+    <line x1="440" y1="200" x2="380" y2="240" />
+    <line x1="380" y1="240" x2="410" y2="300" />
+  </g>
+  <circle cx="160" cy="200" r="4" fill="#C96F4F" />
+  <circle cx="220" cy="240" r="3" fill="#D9C9B2" />
+  <circle cx="190" cy="300" r="4" fill="#687F5B" />
+  <circle cx="440" cy="200" r="4" fill="#C96F4F" />
+  <circle cx="380" cy="240" r="3" fill="#D9C9B2" />
+  <circle cx="410" cy="300" r="4" fill="#687F5B" />
+
+  <!-- Code Glyphs -->
+  <text x="140" y="380" font-family="'JetBrains Mono', monospace" font-size="28" font-weight="700" fill="#687F5B" opacity="0.6">&lt;/&gt;</text>
+  <text x="430" y="380" font-family="'JetBrains Mono', monospace" font-size="28" font-weight="700" fill="#C96F4F" opacity="0.6">{AI}</text>
+
+  <!-- Editorial Info Badge inside frame -->
+  <rect x="52" y="555" width="496" height="125" rx="16" fill="#1B2A24" stroke="#D9C9B2" stroke-opacity="0.3" stroke-width="1.5" />
+  
+  <text x="80" y="598" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="22" font-weight="800" fill="#F8F6EE">Murali Krishna</text>
+  <text x="80" y="626" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#D9C9B2">Python Developer · Full Stack · AI/ML Engineer</text>
+  
+  <rect x="80" y="642" width="95" height="22" rx="11" fill="#C96F4F" />
+  <text x="127" y="657" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">1 YEAR EXP</text>
+
+  <rect x="185" y="642" width="135" height="22" rx="11" fill="#24372F" stroke="#687F5B" stroke-width="1" />
+  <text x="252" y="657" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#E2EADF" text-anchor="middle">ANDHRA PRADESH</text>
+
+  <text x="515" y="657" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#687F5B" text-anchor="end">STATUS: ACTIVE</text>
+</svg>
